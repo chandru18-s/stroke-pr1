@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load trained model
-with open("C:/Users/schan/OneDrive/Desktop/streamlit/LogisticRegression", "rb") as file:
+with open("LogisticRegression", "rb") as file:
     model = pickle.load(file)
 
 st.title("🧠 Stroke Prediction App")
@@ -81,3 +81,4 @@ if st.button("Predict Stroke"):
         st.error("⚠️ High Risk of Stroke")
     else:
         st.success("✅ Low Risk of Stroke")
+
